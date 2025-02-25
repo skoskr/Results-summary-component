@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lightRed: hsl(0, 100%, 67%);
+  --lightRedOp: hsla(0, 100%, 67%, 5%);
+  --orangeyYellow: hsl(39, 100%, 56%);
+  --orangeyYellowOp: hsla(39, 100%, 56%, 5%);
+  --greenTeal: hsl(166, 100%, 37%);
+  --greenTealOp: hsla(166, 100%, 37%, 5%);
+  --cobaltBlue: hsl(234, 85%, 45%);
+  --cobaltBlueOp: hsla(234, 85%, 45%, 5%);
+  --lightSlateBlue: hsl(252, 100%, 67%); /*(background)*/
+  --lightRoyalBlue: hsl(241, 81%, 54%); /*(background)*/
+  --violetBlue: hsla(256, 72%, 46%, 1); /*(circle)*/
+  --persianBlue: hsla(241, 72%, 46%, 0); /*(circle)*/
+  --white: hsl(0, 0%, 100%);
+  --paleBlue: hsl(221, 100%, 96%);
+  --lightLavender: hsl(241, 100%, 89%);
+  --darkGrayBlue: hsl(224, 30%, 27%);
+  --hankenGrotesk: "Hanken Grotesk", serif;
+}
+
+body {
+  font-size: 18px;
+  background-color: var(--paleBlue);
+  font-family: var(--hankenGrotesk);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.result {
+  background: linear-gradient(
+    180deg,
+    var(--lightSlateBlue),
+    var(--lightRoyalBlue)
+  );
+  color: var(--white);
+}
+
+.rate {
+  background: linear-gradient(180deg, var(--violetBlue), var(--persianBlue));
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  font-weight: 800;
+}
+
+#reaction {
+  background-color: var(--lightRedOp);
+}
+
+#memory {
+  background-color: var(--orangeyYellowOp);
+}
+
+#verbal {
+  background-color: var(--greenTealOp);
+}
+
+#visual {
+  background-color: var(--cobaltBlueOp);
+}
+
+.btn {
+  background-color: var(--darkGrayBlue);
+}
+
+@media (min-width: 768px) {
+  .br-md {
+    border-radius: 48px;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    -ms-border-radius: 48px;
+    -o-border-radius: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .br-md {
+    border-bottom-right-radius: 48px;
+    border-bottom-left-radius: 48px;
+  }
+}
